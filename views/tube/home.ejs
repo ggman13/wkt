@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>わかめtube</title>
+    <title>チンチキtube</title>
     <link rel="stylesheet" href="/css/page.css">
     <script src="/js/tailwindcss.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -146,7 +146,7 @@
                 <img src="https://cdn.glitch.global/21c63086-ffc1-4d28-8e9a-e2c12f51b431/IMG_2944.png">
                 </a>
                 <h3>お問い合わせ</h3>
-                <p>サイトの管理者に問い合わせる</p>
+                <p>チンチキに問い合わせる</p>
             </div>
         </div>
     </section>
@@ -203,7 +203,7 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
     if (match) {
         const videoId = match[1];
         showMessage(`YouTubeのURLとして処理されました☑️`);
-        window.location.href = `/wkt/w/${videoId}`;
+        window.__cpLocation.href = `/wkt/w/${videoId}`;
     } else {
         this.submit();
     }
